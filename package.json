@@ -5,11 +5,12 @@
   "main": "index.js",
   "types": ".build/index.d.ts",
   "files": [
-    "./build/**/*"
+    "build/**/*"
   ],
   "scripts": {
     "clean": "del ./build/*",
-    "build": "npm run clean && tsc"
+    "build": "npm run clean && tsc",
+    "pub":"git add . && git commit -m \"updates\" && npm version patch && npm publish"
   },
   "author": "",
   "license": "ISC",
